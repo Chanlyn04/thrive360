@@ -1,0 +1,1094 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  background: linear-gradient(to right, #28a745, white);
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Ensures spacing between logo and buttons */
+  align-items: center; /* Centers all navbar items vertically */
+  padding: 10px 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 80px; /* Ensure enough height */
+}
+/* Navbar Collapse on Smaller Screens */
+.navbar-collapse {
+  justify-content: center;
+}
+
+/* Ensure the navbar items are properly aligned */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem; /* Increased gap */
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: bold;
+  
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.5rem; /* Larger font size for links */
+  background-color: transparent !important; /* Removes white background */
+  transition: color 0.3s ease-in-out;
+  color: black !important; /* Ensures text is visible */
+  
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Optional: Adds a slight hover effect */
+  color: black;
+  text-decoration: underline;
+  transition: width 0.5s ease-in-out, left 0.3s ease-in-out; 
+}
+
+
+/* Resources Dropdown */
+.navbar .navbar-nav .nav-item.dropdown {
+  position: relative; /* For positioning dropdown menu */
+}
+
+
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly stronger hover effect */
+  color: white !important;
+  border-radius: 8px; /* Adds smooth rounded corners */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  
+}
+
+/* Dropdown Menu */
+.navbar .navbar-nav .nav-item .dropdown-menu {
+  border: none;
+  border-radius: 0.25rem; /* Rounded corners */
+  min-width: 180px; /* Ensure dropdown is wide enough */
+  padding: 0; /* Remove default padding */
+  display: none; /* Initially hidden */
+  position: absolute; /* Position it below the toggle */
+  top: 100%; /* Align it to the bottom of the toggle */
+  left: 0;
+  z-index: 1000; /* Ensure dropdown stays above other content */
+}
+
+/* Show the dropdown menu on hover */
+.navbar .navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Item */
+.navbar .navbar-nav .nav-item .dropdown-item {
+  color: rgb(28, 26, 26); /* Text color */
+  padding: 0.75rem 1rem; /* Add padding around items */
+  font-size: 1rem; /* Regular font size */
+  transition: background-color 0.3s ease;
+}
+
+/* Dropdown Item hover effect */
+.navbar .navbar-nav .nav-item .dropdown-item:hover {
+  background-color: #2B9326; /* Change background on hover */
+}
+
+/* Dropdown Divider */
+.navbar .navbar-nav .nav-item .dropdown-divider {
+
+  margin: 0.5rem 0;
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #a777e3;
+}
+
+.btn-outline-success {
+  font-size: 1.2rem; /* Larger button text */
+  color: white;
+  border-color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-outline-success:hover {
+  color: #6e8efb;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(135deg, #facb5d, #d751e8);
+  color: white;
+  padding: 4rem 3rem; /* Increased padding */
+  text-align: center;
+  font-size: 40px; /* Larger font size */
+  font-weight: bolder;
+}
+
+/* Center the content */
+.placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 250px); /* Make sure the content takes full viewport height */
+  padding: 30px; /* Increased padding */
+}
+
+/* Make the h1 big and bold */
+.placeholder-content h1 {
+  font-size: 4rem; /* Even bigger size for the title */
+  font-weight: bold;
+  margin-bottom: 25px; /* Increased space below the title */
+}
+
+/* Optional: Make sure the image is responsive */
+.placeholder-content img {
+  width: 200px; /* Increased logo size */
+  height: auto;
+  margin-bottom: 25px;
+}
+
+/* Optional: Adjust the paragraph styling */
+.placeholder-content p {
+  font-size: 1.2rem; /* Larger paragraph font */
+  max-width: 900px; /* Increased max width */
+  margin: 0 auto;
+}
+
+/* Responsive Cards */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .jumbotron {
+    padding: 3rem 1rem; /* Adjusted padding for mobile */
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .placeholder-content {
+    height: auto; /* Adjust height for smaller content */
+    padding: 15px; /* Adjusted padding */
+  }
+
+  /* Ensure search form is properly aligned in mobile view */
+  .navbar form {
+    margin-top: 15px; /* Adjusted margin */
+  }
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #2c3e50 !important; /* Dark navy blue */
+  padding: 15px 30px;
+}
+
+.navbar img {
+  border-radius: 50%;
+}
+
+.navbar .fw-bold {
+  font-size: 20px;
+}
+
+.navbar .btn {
+  margin-left: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.navbar .btn-outline-success {
+  border-color: #3ca04b;
+  color: #3ca04b;
+}
+
+.navbar .btn-outline-success:hover {
+  background-color: #3ca04b;
+  color: white;
+}
+
+/* Move buttons to the right */
+.navbar .d-flex {
+  margin-left: auto; /* Push buttons to the right */
+}
+
+/* Style the buttons */
+.navbar .btn {
+  margin-left: 10px;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+
+
+/* ===== HERO SECTION ===== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #2c3e50, #3ca04b);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left text section */
+.hero h1 {
+  font-size: 4.5rem;
+  line-height: 1.2;
+}
+
+/* Join now button */
+.hero .btn-outline-success {
+  font-size: 22px;
+  padding: 14px 35px;
+  border-radius: 30px;
+}
+
+/* ===== CIRCLE BACKGROUND & BROKEN BORDER ===== */
+.circle-container {
+  position: absolute;
+  top: 600px;
+  left: 860px;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Outer Dashed Circle (Broken Border) */
+.circle-border {
+  width: 750px;  /* Larger than background circle */
+  height: 750px;
+  border-radius: 50%;
+  border: 10px dashed rgba(255, 255, 255, 0.5); /* Dashed broken border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 45px;
+  top: 130px;
+}
+
+/* Space Between Dashed Border & Background */
+.circle-spacing {
+  width: 1050px; /* Slightly smaller than .circle-border */
+  height: 1150px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  
+}
+
+/* Inner Background Circle */
+.circle-bg {
+  width: 700px;
+  height: 700px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  left: 70px;
+  top: 150px;
+}
+
+/* 🚀 HERO IMAGE - A LOT BIGGER BUT BALANCED */
+.hero-img {
+  width: 1100px;
+  max-width: 1609px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  top: 150px;
+  right: 200px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1000px) {
+  .hero h1 {
+      font-size: 4rem;
+  }
+
+  .hero-img {
+      width: 95%;
+      max-width: 650px;
+      margin-right: 10%;
+  }
+
+  .circle-border {
+      width: 450px;
+      height: 450px;
+      border-width: 6px;
+  }
+
+  .circle-spacing {
+      width: 430px;
+      height: 430px;
+  }
+
+  .circle-bg {
+      width: 400px;
+      height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+      text-align: center;
+      flex-direction: column;
+      padding: 40px 20px;
+  }
+
+  .hero h1 {
+      font-size: 3.5rem;
+  }
+
+  .hero-img {
+      width: 100%;
+      max-width: 600px;
+      margin-right: 20%;
+  }
+
+  .circle-border {
+      width: 380px;
+      height: 380px;
+      border-width: 5px;
+  }
+
+  .circle-spacing {
+      width: 360px;
+      height: 360px;
+  }
+
+  .circle-bg {
+      width: 350px;
+      height: 350px;
+  }
+}
+/* ===== LEFT TEXT SECTION ===== */
+.Caption {
+  font-size: 3.5rem; /* Large text for impact */
+  font-weight: bold;
+  line-height: 1.2;
+  color: black; /* Ensuring contrast with the white background */
+  text-align: left;
+  
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .Caption {
+    font-size: 3rem; /* Slightly smaller for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .Caption {
+    font-size: 2.5rem; /* Adjust text size for mobile */
+  }
+}
+
+/* Sign In CSS */
+
+/* General Styles */
+/* Container Styling */
+.container {   
+  background: linear-gradient(to right,#2c3e50, #3ca04b);
+
+  overflow: hidden; /* Prevents extra white space */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-width: 100%;
+}
+
+
+/* Navbar */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Navbar Links */
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0; /* Slightly darker white */
+}
+
+.nav-link.sign-up {
+  color: white;
+  background-color: #28a745;
+}
+
+.nav-link.sign-up:hover {
+  background-color: #218838; /* Darker green */
+}
+
+/* Login Page Layout */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+
+/* Login Form & Hero Image Wrapper */
+.Login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px;
+  padding-left: 100px; /* Moves everything slightly to the right */
+ 
+}
+
+/* Login Card */
+.login-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 50px; /* Adjust this value to move it more or less */
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px
+  
+}
+/* Centering the text inside the form */
+.title, .subtitle {
+  text-align: center; /* Center the text */
+  width: 100%; /* Ensure it takes the full width */
+  margin-bottom: 10px; /* Add spacing */
+}
+
+/* Style for the title */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Style for the subtitle */
+.subtitle {
+  font-size: 20px;
+  color: 463C3C;
+  margin-bottom: 20px;
+}
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* Input Fields */
+.input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+/* Password Field */
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Hero Image  for sign in , sign up , and forgot pass*/
+.text-centers  {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.circle-borders {
+  position: absolute;
+  width: 640px;
+  height: 640px;
+  border-radius: 50%;
+  border: 6px dashed #fff; /* Dashed white border */
+  top: 370px;
+  left: 600px;
+  transform: translate(-50%, -50%);
+}
+.circle-backg {
+  width: 600px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  left: 300px;
+  top: 70px;
+}
+
+
+.img-hero {
+  width: 1000px;
+  max-width: 1609px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  top: 100px;
+  left: 40px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .Login-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-center {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+/* Forgot Password */
+.forgot-password {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  color: #480606;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+
+/* Sign-in Button */
+.sign-in-btn {
+  width: 100%;
+  padding: 10px;
+  background-color:  #267347;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.sign-in-btn:hover {
+  background-color: #2e6d2e;
+}
+
+/* Signup Link */
+.signup-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.signup-link {
+  color: #259122;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Right Section (for future use) */
+.right-section {
+  display: flex;
+  justify-content: flex-end; /* Moves content to the right */
+  align-items: center;
+  flex: 1; /* Allows it to take up space */
+  height: 100vh; /* Full height */
+  padding-right: 50px; /* Adds spacing from the right edge */
+}
+
+
+.image-container img {
+  width: 100%; /* Ensures full container coverage */
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Login-form {
+      justify-content: center;
+      padding: 0;
+  }
+
+  .login-card {
+      width: 100%;
+  }
+}
+
+  /* Footer Design */
+.footer {
+  width: 100%;
+  background: #2E7D32;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 14px;
+  position: relative; /* Change from absolute */
+  bottom: 0;
+  min-height: 60px; /* Avoid using % for height */
+}
+
+/* Center Content */
+.footer-center {
+  text-align: center;
+  font-size: large;
+  flex-grow: 1; /* Helps center content */
+  margin-right: 30px;
+}
+
+/* Left & Right Sections */
+.footer-left,
+.footer-right {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center; /* Aligns content vertically */
+  margin-top: 30px;
+}
+
+/* Footer Links */
+.footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease, text-decoration-thickness 0.3s ease;
+}
+
+/* Hover effect: Underline and slightly darker color */
+.footer a:hover {
+  text-decoration: underline;
+  color: #e3e0cf;
+}
+
+/* Click effect: Underline stays after click */
+.footer a:active {
+  text-decoration: underline;
+}
+
+/* Footer Separator */
+.footer span {
+  margin: 0 5px;
+  color: white;
+}
+/*   
+Sign UP Design */
+
+
+/* Signup Container */
+.signup-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the form */
+  margin-top: 50px;
+  background-color: transparent;
+}
+
+/* Signup Card */
+.signup-card {
+  width: 590px; /* Match the login card width */
+  background: white;
+  padding: 30px; /* Match login padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-left: 150px;
+  
+}
+
+
+
+.Signup-text {
+  font-size: 15px;  
+  font-weight: bold;  
+  color: #393030;  
+  margin: 0;  /* Remove extra margin */
+  display: inline-block; /* Prevents line break */
+  margin-bottom: 15px;
+  white-space: nowrap; /* Ensures text stays on one line */;
+}
+
+
+/* Logo */
+.logo-containers {
+  display: flex;
+ 
+  
+}
+
+.small-logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 18px;
+  margin-left: 190px;
+  
+  
+  
+}
+
+/* Title */
+.titles {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  
+}
+
+/* Form fields */
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input styling */
+.input-field {
+  width: 300px;
+  padding: 12px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background: #e8e8e8;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Input with icon wrapper */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Register button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #2e8b57;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.register-btn:hover {
+  background: #267347;
+}
+
+/* Sign-in link */
+.signin-text {
+  margin-top: 15px;
+}
+
+.signin-link {
+  color: #2e8b57;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signin-link:hover {
+  text-decoration: underline;
+}
+
+
+.forgot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.forgot-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Forgot Password Card */
+.forgot-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  height: 500px;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+/* Back Arrow */
+.back-arrow {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.form-logo {
+  width: 80px;
+}
+
+/* Title & Subtitle */
+.forgot-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 1px;
+}
+
+.forgot-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* Form Styling */
+.forgot-form {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+}
+
+.forgot-input {
+  width: 300px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #e8e8e8;
+  font-size: 14px;
+  outline: none;
+}
+
+.resend-in-btn {
+  width: 100%;
+  background-color: #0a7426;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.Signup-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.Sign-Up-link {
+  color: #0a7426;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Image Container */
+.forgot-centers {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.c-border {
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  border: 6px dashed #fff; /* Dashed white border */
+  margin-top: 400px;
+  margin-left: 610px;
+  transform: translate(-50%, -50%);
+}
+
+.c-backg {
+  width: 610px;
+  height: 610px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  left: 825px;
+  top: 125px;
+}
+
+.hero-pic {
+  width: 1000px;
+  max-width: 1609px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  top: 130px;
+  left: 45px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .forgot-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forgot-image-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .forgot-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Wellness Features */
+.wellness-section {
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.section-description {
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.wellness-card {
+  margin: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+
+
