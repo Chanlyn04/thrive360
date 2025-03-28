@@ -30,8 +30,8 @@ function NavigationBar() {
                         </ul>
                         <form className="d-flex">
                        
-                        <button className="btn btn-outline-success" type="submit">Profile</button>
-                        
+                        <button className="btn btn-outline-success" type="submit">Login</button>
+                        <button className="btn btn-success" type="submit">Register</button>
                         
                         </form>
                     </div>
