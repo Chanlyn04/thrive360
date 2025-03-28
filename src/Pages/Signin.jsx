@@ -40,7 +40,7 @@ const SignIn = () => {
               Forgot Password?
             </a>
 
-            <button className="sign-in-btn" onClick={() => navigate("/Profile")}>
+            <button className="sign-in-btn" onClick={() => navigate("/Home")}>
               Sign in
             </button>
           </form>
