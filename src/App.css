@@ -383,6 +383,7 @@
 }
 /* ===== LEFT TEXT SECTION ===== */
 .Caption {
+  margin-top: 250px;
   font-size: 3.5rem; /* Large text for impact */
   font-weight: bold;
   line-height: 1.2;
@@ -1048,47 +1049,991 @@ label {
   }
 }
 
-/* Wellness Features */
+/* Make section full height */
 .wellness-section {
-  padding: 50px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 2rem;
 }
 
-.section-title {
-  font-size: 28px;
-  font-weight: bold;
+/* Center the header */
+.header-container {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.section-description {
-  color: #6c757d;
+/* Feature cards container at the bottom */
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+}
+
+.feature-card {
+  background: #f8f8f8; /* Light grey background */
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 30px;
 }
 
-.wellness-card {
-  margin: 10px;
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
-.card {
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+/* Circular Icon at the Top Left */
+.feature-icon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 24px;
+  height: 24px;
+  background-color: #2ecc71; /* Green */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card:hover {
-  transform: scale(1.05);
+
+
+
+
+/* Make sure cards are aligned */
+.feature-row {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.card-title {
-  font-weight: bold;
-}
 
-.card-link {
+
+/* Link styling */
+.text-primary {
+  font-weight: 600;
+  text-decoration: underline;
   color: #007bff;
-  font-weight: bold;
-  text-decoration: none;
 }
 
-.card-link:hover {
+.text-primary:hover {
+  color: #0056b3;
+}
+/* Header Container */
+.header-container {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Header Title */
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin-top: 60px;
+}
+
+/* Header Text */
+.header-text {
+  font-size: 1.1rem;
+  color: grey;
+  line-height: 1.5;
+}
+
+
+/* Profile CSS */
+/* General Styles */
+
+
+.profile-container {
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Profile Header */
+.profile-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  overflow: hidden; /* Prevents unwanted spacing */
+}
+
+.profile-cover {
+  width: 100%;
+  height: 220px; /* Adjust to match the image size */
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.profile-body {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  top: -40px; /* Moves the content up to overlap */
+}
+
+
+.profile-picture {
+  width: 90px;
+  height: 90px;
+  background-color: green;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+ margin-top: -70px;
+  left: 20px; /* Adjust for alignment */
+}
+
+.profile-add {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  line-height: 22px;
+  font-weight: bold;
+}
+.follow-info h4 {
+  font-size: 14px; /* Adjust to desired size */
+  font-weight: 500; /* Optional: Adjust thickness */
+  color: #333; /* Optional: Darker text */
+  margin: 0; /* Remove extra spacing */
+  margin-left: 100px;
+}
+
+/* Events Sidebar */
+.events-card {
+  border-radius: 10px;
+margin-top: 15px;
+border: 2px solid green !important; /* Green border */
+}
+
+.event-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.event-item h6 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.event-item p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* What's on your mind? */
+.what-form input {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+/* Profile picture */
+.profile {
+  width: 40px;
+  height: 40px;
+  background-color: green; /* Adjust to match your theme */
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Circular shape */
+  margin-right: 10px;
+}
+/* Profile Post Styling */
+.profile-post {
+  border: 2px solid green !important; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white; /* Ensure the background is white */
+  box-shadow: 2px 2px 10px rgba(0, 128, 0, 0.2); /* Light green shadow effect */
+}
+
+/* Like & Share Button Styling */
+.interaction-btn {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.interaction-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Post Input Styling */
+.post-input {
+  border: none;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* Post author name */
+.post-author {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Post date */
+.post-date {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+/* Comment container */
+.comment {
+ 
+  padding: 10px;
+  border-radius: 8px; /* Soft rounded corners */
+  font-size: 16px; /* Adjust based on your design */
+  color: black; /* Default text color */
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+/* Posts Section */
+/* Post Card */
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* Profile Post Styling */
+.profile-post {
+  border: 2px solid green ; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white; /* Ensure the background is white */
+  box-shadow: 2px 2px 10px rgba(0, 128, 0, 0.2); /* Light green shadow effect */
+}
+
+/* Post Card Header */
+.post-card .card-header {
+  background-color: whitesmoke;
+  border-bottom: none; /* Removes underline effect */
+  font-weight: bold;
+  padding: 12px 16px;
+  font-size: 20px;
+  border-radius: 10px;
+  
+}
+/* Buttons */
+button {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+button:hover {
+  color: green;
+}
+/* Button Container */
+.filter-btn,
+.manage-posts-btn {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d1d1;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+/* Hover Effect */
+.filter-btn:hover,
+.manage-posts-btn:hover {
+  background-color: #f0f0f0;
+  border-color: #b3b3b3;
+}
+
+/* Icons inside Buttons */
+.filter-btn svg,
+.manage-posts-btn svg {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+/* Right Sidebar */
+.right-sidebar-card {
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 2px solid green !important; /* Green border */
+}
+
+.notification-item {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.notification-item .text-success {
+  color: green !important;
+}
+
+.recent-activity-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.recent-activity-item:hover {
+  color: green;
+}
+
+/* Freedom cSS */
+/* FreedomWall.css */
+  .freedom-wall-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    min-height: 100vh; /* Ensure full height */
+    width: 100%;
+    padding-bottom: 20px; /* Add spacing at the bottom */
+    position: relative;
+   
+    
+  }
+  .post-input-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    z-index: 10; /* Ensure it's above posts */
+  }
+  
+  .post-input-card {
+    margin-bottom: 20px; /* Space from posts */
+  }
+.headers{
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  margin-bottom: 10px; 
+}
+
+/* Title and Description Styling */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin-top: 60px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: grey;
+  line-height: 1.5;
+}
+
+
+.post-input-card, .post-card {
+  max-width: 1000px;
+  width: 100%;
+  border: 2px solid #28a745;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: 2px solid green !important;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 128, 0, 0.2);
+  margin-top: 0; /* Remove extra spacing */
+
+}
+
+.post-input {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-input-field {
+  margin-left: 10px;
+  border: none;
+  background-color: #f8f9fa;
+  width: 100%;
+}
+
+.post-card {
+  margin-bottom: 15px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-author {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.post-content {
+  margin-top: 10px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+}
+/* Like & Share Button Group */
+.action-group {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between Like and Share */
+}
+
+/* Like & Share Button Styling */
+.like-button,
+.share-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.like-button:hover,
+.share-button:hover {
+  transform: scale(1.1);
+}
+
+/* Wellnes Blogs Css */
+.wellness-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h2 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #333;
+  margin-top: 70px;
+}
+
+.header p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Category Navigation */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Ensures it stays horizontal on large screens */
+  
+}
+
+.categories button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background-color: #ddd;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categories button.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.categories button:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Featured Blog - Centered */
+.featured-blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 30px 0;
+  max-width: 800px;
+}
+
+.featured-blog img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.featured-blog-content {
+  flex: 1;
+}
+
+.featured-category {
+  font-size: 14px;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.featured-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.featured-blog-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* Author */
+.author {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.author-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Blog Grid - Aligned at the Bottom */
+.blog-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end; /* Ensures all cards align at the bottom */
+}
+
+.blog-card {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-card .blog-category {
+  display: inline-block;
+  background: #28a745;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.blog-card .blog-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.blog-card .blog-link {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: auto; /* Ensures button stays at the bottom */
+  padding-bottom: 10px;
+}
+
+.blog-card .blog-link:hover {
   text-decoration: underline;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .blog-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-blog {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .featured-blog img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Meditation CSS */
+/* Container */
+.meditation-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height */
+  background: white;
+}
+
+/* Tabs - Horizontally Centered */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.tab:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Guide Section - Positioned at the Bottom */
+.guide-section {
+  margin-top: auto; /* Pushes the grid to the bottom */
+  padding-bottom: 40px; /* Adds spacing */
+}
+
+/* Guide Grid */
+.guide-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-end; /* Aligns cards at the bottom */
+}
+
+/* Cards */
+.guide-card {
+  display: flex;
+  justify-content: center;
+}
+
+.equal-height-card {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 180px;
+  background: #ccc;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-bodys {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align text to the bottom */
+}
+
+.guide-categorys {
+  display: inline-block;
+  background: #28a745;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+/* Challenges CSS */
+.challenges-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+/* Header */
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Progress Section */
+.progress-container {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  width: 900px;
+}
+
+.main-progress {
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+}
+
+.progress-container h5 {
+  margin-bottom: 10px;
+}
+
+.progress-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Challenges Grid */
+.challenges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Challenge Cards */
+.challenge-card {
+  display: flex;
+  justify-content: center;
+}
+
+.challenge {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 15px;
+}
+/* Green Button */
+.challenge-button {
+  background-color: rgb(25, 182, 33) !important;
+  border-color: green !important;
+  color: white !important;
+}
+
+.challenge-button:hover {
+  background-color: darkgreen !important;
+  border-color: darkgreen !important;
+}
+
+/* Dark Green Progress Bar */
+.main-progress .progress-bar {
+  background-color: darkgreen !important;
+}
 
 
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.type-tag {
+  background: #ddd;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status-tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status-tag.progress {
+  background: #28a745;
+  height: 30px;
+}
+
+.status-tag.notstarted {
+  background: #ddd;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #666;
+}
+
+/* Progress Bar */
+.progress-section {
+  margin-top: 15px;
+  
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 5px;
+}
+
+.progress-text {
+  font-size: 12px;
+  text-align: right;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.challenge-button {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Themed Card Colors */
+.blue {
+  border-top: 4px solid #28a745;
+}
+
+.purple {
+  border-top: 4px solid #28a745;
+}
+
+.lightblue {
+  border-top: 4px solid #28a745;
+}
