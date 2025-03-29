@@ -1833,25 +1833,29 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  align-items: flex-end; /* Aligns cards at the bottom */
+  align-items: stretch; /* Ensures all cards have the same height */
 }
 
 /* Cards */
 .guide-card {
+  flex: 1 1 calc(33.333% - 20px); /* 3 columns */
+  max-width: calc(33.333% - 20px);
   display: flex;
   justify-content: center;
 }
 
 .equal-height-card {
-  width: 300px;
+  width: 100%;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #ddd;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Ensures equal spacing */
 }
 
+/* Image Styling */
 .image-placeholder {
   width: 100%;
   height: 180px;
@@ -1866,13 +1870,16 @@ button:hover {
   object-fit: cover;
 }
 
+/* Card Body */
 .card-bodys {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Align text to the bottom */
+  padding: 15px;
 }
 
+/* Category Tag */
 .guide-categorys {
   display: inline-block;
   background: #28a745;
@@ -1881,7 +1888,31 @@ button:hover {
   padding: 4px 10px;
   border-radius: 20px;
   margin-bottom: 8px;
+  text-align: center;
 }
+
+/* Title */
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .guide-card {
+    flex: 1 1 calc(50% - 20px); /* 2 columns */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .guide-card {
+    flex: 1 1 100%; /* 1 column */
+    max-width: 100%;
+  }
+}
+
 /* Challenges CSS */
 .challenges-container {
   max-width: 1100px;
