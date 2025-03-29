@@ -475,24 +475,23 @@
   padding-left: 100px; /* Moves everything slightly to the right */
  
 }
+/* Logo */
+
+
 
 /* Login Card */
 .login-card {
   background: white;
-  padding: 30px;
+  padding: 10px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-left: 50px; /* Adjust this value to move it more or less */
 }
-
-/* Logo */
 .logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px
-  
+  position: relative;
+  top: 40px; /* Increase this value to move the logo further down */
 }
+
 /* Centering the text inside the form */
 .title, .subtitle {
   text-align: center; /* Center the text */
@@ -511,7 +510,7 @@
 .subtitle {
   font-size: 20px;
   color: 463C3C;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /* Form */
 .form {
@@ -532,6 +531,7 @@
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
+  background: #e8e8e8;
   border-radius: 15px;
   font-size: 14px;
 }
@@ -641,6 +641,7 @@
 
 .sign-in-btn:hover {
   background-color: #2e6d2e;
+  color: whitesmoke;
 }
 
 /* Signup Link */
@@ -848,7 +849,7 @@ label {
   position: absolute;
   right: 15px;
   cursor: pointer;
-  margin-bottom: 10px;
+  
 }
 
 /* Register button */
@@ -867,6 +868,7 @@ label {
 
 .register-btn:hover {
   background: #267347;
+  color: whitesmoke;
 }
 
 /* Sign-in link */
@@ -928,11 +930,13 @@ label {
 .logo-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  
+  margin-bottom: 50px;
 }
 
 .form-logo {
   width: 80px;
+  
 }
 
 /* Title & Subtitle */
@@ -960,7 +964,7 @@ label {
 .forgot-input {
   width: 300px;
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid #ccc;
   background: #e8e8e8;
   font-size: 14px;
@@ -969,15 +973,18 @@ label {
 
 .resend-in-btn {
   width: 100%;
-  background-color: #0a7426;
+  background-color:  #2e8b57;
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-
+.resend-in-btn:hover {
+  background: #267347;
+  color: whitesmoke;
+}
 .Signup-text {
   font-size: 14px;
   margin-top: 10px;
@@ -1918,36 +1925,53 @@ button:hover {
   color: #666;
 }
 
-/* Challenges Grid */
 .challenges-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  gap: 20px; /* Spacing between cards */
+  justify-content: space-between; /* Ensures equal spacing */
 }
 
-/* Challenge Cards */
 .challenge-card {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .challenge {
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 350px; /* Ensure uniform height */
+  padding-bottom: 20px;
 }
 
-.card-header {
+.challenge .card-body {
+  flex-grow: 1;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  font-size: 12px;
+}
+
+/* Aligns Progress Tag to Right */
+.status-tag {
+  margin-left: auto; /* Pushes it to the right */
+  background-color: yellow;
+  padding: 3px 8px;
   font-weight: bold;
-  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Aligns Button to Bottom */
+.challenge-button {
+  width: 100%;
+  margin-top: auto; /* Pushes button to bottom */
+}
+
+/* Makes All Cards Equal Height */
+@media (min-width: 992px) {
+  .challenge-card {
+    flex: 1 1 calc(33.333% - 20px); /* Ensures 3-column layout */
+  }
 }
 
 .type-tag {

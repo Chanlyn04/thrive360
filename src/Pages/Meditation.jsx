@@ -5,8 +5,14 @@ const Meditation = () => {
   const guides = Array(8).fill({
     title: "Beginner’s Breath Awareness",
     category: "Mental Health",
-    image: "https://via.placeholder.com/300x200",
-  });
+    image: "https://i.pinimg.com/736x/28/90/4e/28904e0443cc6749d2e004c2bbac7639.jpg", 
+  },
+  {
+    title: "Practical Strategies for Managing Anxiety and Stress",
+    category: "Mental Health",
+    image: "https://i.pinimg.com/474x/a9/0f/ba/a90fba4eef258ca5cdec3abdb479fe91.jpg",
+  },
+);
 
   return (
     <div className="meditation-page">
