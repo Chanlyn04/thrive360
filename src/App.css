@@ -1707,7 +1707,6 @@ button:hover {
   margin-right: 8px;
 }
 
-/* Blog Grid - Aligned at the Bottom */
 .blog-grid {
   display: flex;
   gap: 20px;
@@ -1747,6 +1746,7 @@ button:hover {
   font-weight: bold;
   color: #333;
   margin-bottom: 5px;
+  text-align: left;
 }
 
 .blog-card .blog-link {
@@ -1779,6 +1779,8 @@ button:hover {
     height: auto;
   }
 }
+
+
 /* Meditation CSS */
 /* Container */
 .meditation-container {
