@@ -22,7 +22,7 @@ const WellnessBlog = () => {
 
       {/* Featured Blog */}
       <div className="featured-blog">
-        <img src="https://via.placeholder.com/300x200" alt="Featured Blog" />
+        <img src="https://i.pinimg.com/474x/1e/e6/6a/1ee66a4517d068f5db3b0443684b748b.jpg" alt="Featured Blog" />
         <div className="featured-blog-content">
           <div className="featured-category">
             <span>Mental Health</span>
@@ -41,25 +41,25 @@ const WellnessBlog = () => {
           {
             title: "Finding Balance: How to Manage Academic Stress",
             category: "Mental Health",
-            image: "https://via.placeholder.com/300x200",
+            image: "https://i.pinimg.com/474x/1e/e6/6a/1ee66a4517d068f5db3b0443684b748b.jpg",
             link: "#",
           },
           {
             title: "Brain Foods: Eating for Academic Success",
             category: "Mental Health",
-            image: "https://via.placeholder.com/300x200",
+            image: "https://i.pinimg.com/474x/86/6a/d0/866ad0b1e99a5a6a7809ebe4801b2147.jpg",
             link: "#",
           },
           {
             title: "The Student’s Guide to Quality Sleep",
             category: "Mental Health",
-            image: "https://via.placeholder.com/300x200",
+            image: "https://i.pinimg.com/474x/0b/70/38/0b70385eece9929f2460e7e18f8a15e5.jpg",
             link: "#",
           },
           {
             title: "The Student’s Guide to Quality Sleep",
             category: "Mental Health",
-            image: "https://via.placeholder.com/300x200",
+            image: "https://i.pinimg.com/474x/1e/3e/88/1e3e8884e34fa76dfcfe969d1ec0bb88.jpg",
             link: "#",
           },
          

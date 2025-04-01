@@ -5,11 +5,12 @@ function Landing() {
                 <div className="row align-items-center">
                     {/* Left Section - Text */}
                     <div className="col-md-6 text-white">
-    <h1 className="Caption">
-        Develop your <br />
-        courage to heal, <br />
-        and strength to grow
-    </h1>
+                    <h1 className="Caption" style={{ color: "white" }}>
+    Develop your <br />
+    courage to heal, <br />
+    and strength to grow
+</h1>
+
     
     <p className="mt-3 fs-5">
         Your personal companion on the journey to a healthier, happier, and more balanced life.<br />

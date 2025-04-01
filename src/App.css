@@ -766,7 +766,7 @@ Sign UP Design */
 
 /* Signup Card */
 .signup-card {
-  width: 590px; /* Match the login card width */
+  width: 400px; /* Match the login card width */
   background: white;
   padding: 30px; /* Match login padding */
   border-radius: 10px;
@@ -790,22 +790,12 @@ Sign UP Design */
 
 
 /* Logo */
-.logo-containers {
+.logo-container {
   display: flex;
- 
-  
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px
 }
-
-.small-logo {
-  width: 50px;
-  height: auto;
-  margin-bottom: 18px;
-  margin-left: 190px;
-  
-  
-  
-}
-
 /* Title */
 .titles {
   font-size: 25px;
@@ -843,13 +833,14 @@ label {
   display: flex;
   align-items: center;
   position: relative;
+  
 }
 
 .eye-icon {
   position: absolute;
   right: 15px;
   cursor: pointer;
-  margin-bottom: 10px;
+  
 }
 
 /* Register button */
@@ -868,6 +859,7 @@ label {
 
 .register-btn:hover {
   background: #267347;
+  color: whitesmoke;
 }
 
 /* Sign-in link */
@@ -926,14 +918,19 @@ label {
 }
 
 /* Logo */
-.logo-container {
+.logo-containers {
   display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width: 100%; /* Full width */
+  height: 100px; /* Adjust as needed */
 }
 
-.form-logo {
-  width: 80px;
+/* Logo Image */
+.small-logo {
+  width: 80px; /* Adjust logo size */
+  height: auto; /* Maintains aspect ratio */
+  
 }
 
 /* Title & Subtitle */
@@ -961,7 +958,7 @@ label {
 .forgot-input {
   width: 300px;
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid #ccc;
   background: #e8e8e8;
   font-size: 14px;
@@ -970,15 +967,18 @@ label {
 
 .resend-in-btn {
   width: 100%;
-  background-color: #0a7426;
+  background-color:  #2e8b57;
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-
+.resend-in-btn:hover {
+  background: #267347;
+  color: whitesmoke;
+}
 .Signup-text {
   font-size: 14px;
   margin-top: 10px;
@@ -1019,6 +1019,7 @@ label {
   position: absolute;
   left: 825px;
   top: 125px;
+
 }
 
 .hero-pic {

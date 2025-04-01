@@ -30,8 +30,13 @@ function NavigationBar() {
                         </ul>
                         <form className="d-flex">
                        
-                        <button className="btn btn-outline-success" type="submit">Login</button>
-                        <button className="btn btn-success" type="submit">Register</button>
+                        <button className="btn btn-outline-success" type="submit">
+                        <Link to="/Signin" style={{ textDecoration: "none", color: "inherit" }}>Signin</Link>
+                        </button>
+                        <button className="btn btn-success" type="submit">
+                        <Link to="/Signup" style={{ textDecoration: "none", color: "inherit" }}>Register</Link>
+
+                        </button>
                         
                         </form>
                     </div>

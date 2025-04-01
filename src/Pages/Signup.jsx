@@ -18,7 +18,6 @@ const SignUp = () => {
       <div className="signup-card">
         {/* Logo & Title */}
         <div className="logo-containers">
-        <h6 className="Signup-text">Sign up</h6>
           <img src={logo} alt="Logo" className="small-logo" />
         </div>
         

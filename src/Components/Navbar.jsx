@@ -43,7 +43,7 @@ function NavigationBar() {
                                 
                             </Link>
                             <button className="btn btn-outline-success" type="submit">
-  <Link to="/signin" style={{ textDecoration: "none", color: "inherit" }}>Logout</Link>
+  <Link to="/Signin" style={{ textDecoration: "none", color: "inherit" }}>Logout</Link>
 </button>
                         </form>
                     </div>
