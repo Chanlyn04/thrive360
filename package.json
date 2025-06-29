@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+<<<<<<< HEAD
     "lucide-react": "^0.485.0",
+=======
+    "lucide-react": "^0.484.0",
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",

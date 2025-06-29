@@ -476,24 +476,23 @@
   padding-left: 100px; /* Moves everything slightly to the right */
  
 }
+/* Logo */
+
+
 
 /* Login Card */
 .login-card {
   background: white;
-  padding: 30px;
+  padding: 10px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-left: 50px; /* Adjust this value to move it more or less */
 }
-
-/* Logo */
 .logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px
-  
+  position: relative;
+  top: 40px; /* Increase this value to move the logo further down */
 }
+
 /* Centering the text inside the form */
 .title, .subtitle {
   text-align: center; /* Center the text */
@@ -512,7 +511,7 @@
 .subtitle {
   font-size: 20px;
   color: 463C3C;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /* Form */
 .form {
@@ -533,6 +532,7 @@
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
+  background: #e8e8e8;
   border-radius: 15px;
   font-size: 14px;
 }
@@ -642,6 +642,7 @@
 
 .sign-in-btn:hover {
   background-color: #2e6d2e;
+  color: whitesmoke;
 }
 
 /* Signup Link */
@@ -920,6 +921,7 @@ label {
 /* Logo */
 .logo-containers {
   display: flex;
+<<<<<<< HEAD
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
   width: 100%; /* Full width */
@@ -930,6 +932,15 @@ label {
 .small-logo {
   width: 80px; /* Adjust logo size */
   height: auto; /* Maintains aspect ratio */
+=======
+  justify-content: center;
+  
+  margin-bottom: 50px;
+}
+
+.form-logo {
+  width: 80px;
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
   
 }
 
@@ -1702,7 +1713,10 @@ button:hover {
   margin-right: 8px;
 }
 
+<<<<<<< HEAD
 /* Blog Grid - Aligned at the Bottom */
+=======
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
 .blog-grid {
   display: flex;
   gap: 20px;
@@ -1742,6 +1756,10 @@ button:hover {
   font-weight: bold;
   color: #333;
   margin-bottom: 5px;
+<<<<<<< HEAD
+=======
+  text-align: left;
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
 }
 
 .blog-card .blog-link {
@@ -1774,6 +1792,7 @@ button:hover {
     height: auto;
   }
 }
+<<<<<<< HEAD
 /* Meditation CSS */
 /* Container */
 .meditation-container {
@@ -1969,6 +1988,236 @@ button:hover {
   margin-bottom: 10px;
 }
 
+=======
+
+
+/* Meditation CSS */
+/* Container */
+.meditation-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height */
+  background: white;
+}
+
+/* Tabs - Horizontally Centered */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.tab:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Guide Section - Positioned at the Bottom */
+.guide-section {
+  margin-top: auto; /* Pushes the grid to the bottom */
+  padding-bottom: 40px; /* Adds spacing */
+}
+
+/* Guide Grid */
+.guide-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch; /* Ensures all cards have the same height */
+}
+
+/* Cards */
+.guide-card {
+  flex: 1 1 calc(33.333% - 20px); /* 3 columns */
+  max-width: calc(33.333% - 20px);
+  display: flex;
+  justify-content: center;
+}
+
+.equal-height-card {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures equal spacing */
+}
+
+/* Image Styling */
+.image-placeholder {
+  width: 100%;
+  height: 180px;
+  background: #ccc;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card Body */
+.card-bodys {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align text to the bottom */
+  padding: 15px;
+}
+
+/* Category Tag */
+.guide-categorys {
+  display: inline-block;
+  background: #28a745;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Title */
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .guide-card {
+    flex: 1 1 calc(50% - 20px); /* 2 columns */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .guide-card {
+    flex: 1 1 100%; /* 1 column */
+    max-width: 100%;
+  }
+}
+
+/* Challenges CSS */
+.challenges-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+/* Header */
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Progress Section */
+.progress-container {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  width: 900px;
+}
+
+.main-progress {
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+}
+
+.progress-container h5 {
+  margin-bottom: 10px;
+}
+
+.progress-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.challenges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Spacing between cards */
+  justify-content: space-between; /* Ensures equal spacing */
+}
+
+.challenge-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.challenge {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 350px; /* Ensure uniform height */
+  padding-bottom: 20px;
+}
+
+.challenge .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Aligns Progress Tag to Right */
+.status-tag {
+  margin-left: auto; /* Pushes it to the right */
+  background-color: yellow;
+  padding: 3px 8px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Aligns Button to Bottom */
+.challenge-button {
+  width: 100%;
+  margin-top: auto; /* Pushes button to bottom */
+}
+
+/* Makes All Cards Equal Height */
+@media (min-width: 992px) {
+  .challenge-card {
+    flex: 1 1 calc(33.333% - 20px); /* Ensures 3-column layout */
+  }
+}
+
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
 .type-tag {
   background: #ddd;
   padding: 5px 10px;
@@ -1983,8 +2232,12 @@ button:hover {
 }
 
 .status-tag.progress {
+<<<<<<< HEAD
   background: #28a745;
   height: 30px;
+=======
+  background: yellow;
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
 }
 
 .status-tag.notstarted {
@@ -2028,6 +2281,7 @@ button:hover {
 
 /* Themed Card Colors */
 .blue {
+<<<<<<< HEAD
   border-top: 4px solid #28a745;
 }
 
@@ -2038,3 +2292,15 @@ button:hover {
 .lightblue {
   border-top: 4px solid #28a745;
 }
+=======
+  border-top: 4px solid #007bff;
+}
+
+.purple {
+  border-top: 4px solid #800080;
+}
+
+.lightblue {
+  border-top: 4px solid #6cace4;
+}
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010

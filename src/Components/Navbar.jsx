@@ -33,7 +33,11 @@ function NavigationBar() {
                        
                         <Link to="/Profile">
                                 <img 
+<<<<<<< HEAD
                                     src="https://scontent.fceb1-2.fna.fbcdn.net/v/t1.15752-9/481444257_2055183788319796_7860217918133292027_n.png?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEpgTsHxwE7GWyAcgo39WpKMAgf0pnHHacwCB_Smccdp-sqhE8EZIyoYqqAR4KYNme5zcZ3ypVvDjxktYhdVsih&_nc_ohc=VxIpWlQ0EnQQ7kNvgGykdj8&_nc_oc=Adlqbj542Aju-J44BaIVJwvaVJrpcQxTiEeLGPUDs29VYNn9Z_F9ICZnsb0rJiNLz5k&_nc_ad=z-m&_nc_cid=1119&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&oh=03_Q7cD1wFyyO_Co0HIgKyPuh83RVeWaDW0X81PmMI4X-65G9-mlw&oe=680F4FAB"  // Replace with your profile image URL
+=======
+                                    src="https://i.pinimg.com/736x/c2/5f/45/c25f4555a84d5beb9663c9aa46301558.jpg"  // Replace with your profile image URL
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
                                     alt="Profile"
                                     width="60"
                                     height="60"
@@ -43,7 +47,11 @@ function NavigationBar() {
                                 
                             </Link>
                             <button className="btn btn-outline-success" type="submit">
+<<<<<<< HEAD
   <Link to="/Signin" style={{ textDecoration: "none", color: "inherit" }}>Logout</Link>
+=======
+  <Link to="/signin" style={{ textDecoration: "none", color: "inherit" }}>Logout</Link>
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
 </button>
                         </form>
                     </div>

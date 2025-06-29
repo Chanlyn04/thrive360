@@ -58,7 +58,11 @@ const Profile = () => {
       <Row className="gx-3">
         <Col xs={12}>
           <Card className="profile-header">
+<<<<<<< HEAD
             <Card.Img variant="top" src="https://i.pinimg.com/474x/2f/9d/a0/2f9da0bb1416cd6f672690fdadd02949.jpg" className="profile-cover" />
+=======
+            <Card.Img variant="top" src="../public/images/k.jpg" className="profile-cover" />
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
             <Card.Body>
               <div className="profile-info">
                 <div className="profile-picture">F <span className="profile-add">+</span></div>
@@ -151,4 +155,8 @@ const Profile = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Profile;
+=======
+export default Profile;
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010

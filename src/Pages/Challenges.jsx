@@ -54,6 +54,7 @@ const Challenges = () => {
         <p>You’ve completed 0 of 5 active challenges. Keep going!</p>
       </div>
 
+<<<<<<< HEAD
       {/* Challenges Section */}
       <Row className="challenges-grid">
         {challenges.map((challenge, index) => (
@@ -84,6 +85,40 @@ const Challenges = () => {
           </Col>
         ))}
       </Row>
+=======
+      <Row className="challenges-grid">
+  {challenges.map((challenge, index) => (
+    <Col lg={4} md={6} sm={12} key={index} className="challenge-card">
+      <Card className={`challenge ${challenge.theme}`}>
+        <div className="card-header d-flex justify-content-between">
+          <span className="type-tag">{challenge.type}</span>
+          <span className="status-tag">{challenge.status}</span> {/* Right-Aligned */}
+        </div>
+        <Card.Body>
+          <Card.Title>{challenge.title}</Card.Title>
+          <Card.Text>{challenge.description}</Card.Text>
+
+          <div className="details">
+            <span className="days-left">📅 {challenge.daysLeft}</span>
+            <span className="participants">👥 {challenge.participants} participants</span>
+          </div>
+
+          {challenge.progress !== null && (
+            <div className="progress-section">
+              <span className="progress-label">Progress</span>
+              <ProgressBar now={challenge.progress} className="progress-bar" />
+              <small className="progress-text">Day {challenge.progress / 10} of 7</small>
+            </div>
+          )}
+
+          <Button className="challenge-button">{challenge.buttonText}</Button>
+        </Card.Body>
+      </Card>
+    </Col>
+  ))}
+</Row>
+
+>>>>>>> 443c7997a2808ff1ef41eadc8cd3389d55a61010
     </Container>
   );
 };
